@@ -19,7 +19,10 @@ on:
 
 jobs:
   build-and-push:
+    environment: prod
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     outputs:
       image_tag: ${{ github.sha }}
 

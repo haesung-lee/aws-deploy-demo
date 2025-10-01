@@ -8,6 +8,9 @@ WORKDIR /app
 COPY gradle ./gradle
 COPY gradlew ./gradlew
 
+# 윈도우 CRLF 제거 + 실행권한 부여
+RUN sed -i 's/\r$//' gradlew && chmod +x gradlew
+
 # Gradle 캐시를 위한 의존성 파일 복사
 COPY build.gradle settings.gradle ./
 

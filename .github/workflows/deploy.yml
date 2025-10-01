@@ -6,6 +6,7 @@
 #
 # Vars (일반 변수, Environment variables)
 # AWS_REGION         : 배포할 리전 (예: ap-northeast-2)
+# ECR_REPOSITORY     : 리포지토리 이름
 # ECS_TASK_DEFINITION: 태스크 정의 이름 (예: file-management-task)
 # ECS_CLUSTER        : ECS 클러스터 이름 (예: file-management-cluster)
 # ECS_SERVICE        : ECS 서비스 이름 (예: file-management-service)
